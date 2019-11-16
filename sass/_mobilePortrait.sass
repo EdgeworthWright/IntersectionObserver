@@ -1,0 +1,43 @@
+@media (min-width: 320px) and (max-width: 480px)
+
+    label[for=menuCheckBox] 
+        display: block
+        height: 40px
+        width: 50px
+        z-index: 10
+        
+
+    .top
+        display: block
+        width: 100%
+        height: 10px
+        margin-bottom: 5px
+        background: black
+        
+    .middle
+        @extend .top
+
+    .bottom 
+        @extend .top
+
+    nav
+        &.checked
+            height: 100vh
+
+            ul
+                margin: 40px 0 0
+        
+        padding: 1em
+        background: #333
+        display: block
+        height: 40px
+
+        ul 
+            margin: 0 10000px
+        li
+            width: 80%
+            border-bottom: rgba(255,255,255,.8) 1px solid
+            margin: 0 10%
+
+    .wrapper 
+        margin-top: 0

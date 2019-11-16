@@ -1,0 +1,137 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\000034}}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\000038}}
+html {
+  scroll-behavior: smooth;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000311}}
+#menuCheckBox {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000314}}
+label[for=menuCheckBox] {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000317}}
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000321}}
+nav ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000329}}
+nav li {
+  float: left;
+  width: 20%;
+  height: 70px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000334}}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000342}}
+nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000345}}
+nav li a span {
+  position: relative;
+  top: 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000349}}
+.active {
+  background: #000058;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000352}}
+.active:hover {
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000355}}
+section {
+  display: block;
+  width: 100%;
+  height: 60vh;
+  padding: 4.5em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000356}}
+section:nth-of-type(even) {
+  background: #ddd;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000358}}
+section:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/_mobilePortrait\.sass}line{font-family:\000033}}
+  label[for=menuCheckBox] {
+    display: block;
+    height: 40px;
+    width: 50px;
+    z-index: 10;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/_mobilePortrait\.sass}line{font-family:\0000310}}
+  .top, .middle, .bottom {
+    display: block;
+    width: 100%;
+    height: 10px;
+    margin-bottom: 5px;
+    background: black;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/_mobilePortrait\.sass}line{font-family:\0000323}}
+  nav {
+    padding: 1em;
+    background: #333;
+    display: block;
+    height: 40px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/_mobilePortrait\.sass}line{font-family:\0000324}}
+  nav.checked {
+    height: 100vh;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/_mobilePortrait\.sass}line{font-family:\0000327}}
+  nav.checked ul {
+    margin: 40px 0 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/_mobilePortrait\.sass}line{font-family:\0000335}}
+  nav ul {
+    margin: 0 10000px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/_mobilePortrait\.sass}line{font-family:\0000337}}
+  nav li {
+    width: 80%;
+    border-bottom: rgba(255, 255, 255, 0.8) 1px solid;
+    margin: 0 10%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/_mobilePortrait\.sass}line{font-family:\0000342}}
+  .wrapper {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
