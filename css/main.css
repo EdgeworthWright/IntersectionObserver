@@ -84,6 +84,12 @@ section:nth-of-type(odd) {
   background: rgba(0, 0, 0, 0.4);
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/main\.sass}line{font-family:\0000366}}
+.content {
+  text-align: center;
+  margin: 10em;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/damhe\/Documents\/maschool\/bewijzenmap\/periode2\.1\/FRO\/IntersectionObserver\/sass\/_mobilePortrait\.sass}line{font-family:\000033}}
   label[for=menuCheckBox] {

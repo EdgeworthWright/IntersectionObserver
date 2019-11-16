@@ -1,5 +1,5 @@
 let alleLinks = document.querySelectorAll('nav ul li a');
-let deSecties = document.querySelectorAll('section');
+let deSecties = document.querySelectorAll('.content');
 
 const opties = {
     // rootMargin: '-150px',
@@ -7,9 +7,9 @@ const opties = {
 };
 const verwerkDoorsnijding = (entries, observer) => {
     entries.forEach( entry => {
-        console.log(entry.target.parentNode.id + " doorsnijdt " + entry.isIntersecting);
+        console.log(entry.target.parentNode.parentNode.id + " doorsnijdt " + entry.isIntersecting);
         if (entry.isIntersecting) {
-            let link = zoekBijpassendeLink(entry.target.parentNode.id);
+            let link = zoekBijpassendeLink(entry.target.parentNode.parentNode.id);
             maakActief(link);
         }
     });
@@ -19,7 +19,7 @@ let observer = new IntersectionObserver(verwerkDoorsnijding, opties);
 
 // observer.observe(deSecties[1]);
 deSecties.forEach( sectie => {
-    observer.observe(sectie.getElementsByTagName('p')[0]);
+    observer.observe(sectie.getElementsByTagName('h1')[0]);
 })
 
 // Functie die active verwijderd
