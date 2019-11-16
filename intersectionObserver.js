@@ -1,10 +1,13 @@
 let alleLinks = document.querySelectorAll('nav ul li a');
 let deSecties = document.querySelectorAll('section');
 
-const opties = {};
+const opties = {
+    rootMargin: '-150px',
+    treshold: 1.0
+};
 const verwerkDoorsnijding = (entries, observer) => {
     entries.forEach( entry => {
-        // console.log(entry.target.id + " doorsnijdt " + entry.isIntersecting);
+        console.log(entry.target.id + " doorsnijdt " + entry.isIntersecting);
         if (entry.isIntersecting) {
             let link = zoekBijpassendeLink(entry.target.id);
             maakActief(link);
@@ -14,7 +17,10 @@ const verwerkDoorsnijding = (entries, observer) => {
 
 let observer = new IntersectionObserver(verwerkDoorsnijding, opties);
 
-observer.observe(deSecties[1]);
+// observer.observe(deSecties[1]);
+deSecties.forEach( sectie => {
+    observer.observe(sectie);
+})
 
 // Functie die active verwijderd
 const verwijderActief = () => {
