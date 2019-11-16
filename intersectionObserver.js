@@ -2,14 +2,14 @@ let alleLinks = document.querySelectorAll('nav ul li a');
 let deSecties = document.querySelectorAll('section');
 
 const opties = {
-    rootMargin: '-150px',
+    // rootMargin: '-150px',
     treshold: 1.0
 };
 const verwerkDoorsnijding = (entries, observer) => {
     entries.forEach( entry => {
-        console.log(entry.target.id + " doorsnijdt " + entry.isIntersecting);
+        console.log(entry.target.parentNode.id + " doorsnijdt " + entry.isIntersecting);
         if (entry.isIntersecting) {
-            let link = zoekBijpassendeLink(entry.target.id);
+            let link = zoekBijpassendeLink(entry.target.parentNode.id);
             maakActief(link);
         }
     });
@@ -19,7 +19,7 @@ let observer = new IntersectionObserver(verwerkDoorsnijding, opties);
 
 // observer.observe(deSecties[1]);
 deSecties.forEach( sectie => {
-    observer.observe(sectie);
+    observer.observe(sectie.getElementsByTagName('p')[0]);
 })
 
 // Functie die active verwijderd
