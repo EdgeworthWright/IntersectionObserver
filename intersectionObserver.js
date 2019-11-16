@@ -4,7 +4,11 @@ let deSecties = document.querySelectorAll('section');
 const opties = {};
 const verwerkDoorsnijding = (entries, observer) => {
     entries.forEach( entry => {
-        console.log(entry.target + " doorsnijdt " + entry.isIntersecting);
+        // console.log(entry.target.id + " doorsnijdt " + entry.isIntersecting);
+        if (entry.isIntersecting) {
+            let link = zoekBijpassendeLink(entry.target.id);
+            maakActief(link);
+        }
     });
 }
 
@@ -35,3 +39,8 @@ alleLinks.forEach( (link) => {
         window.location = e.target.href;
     })
 })
+
+const zoekBijpassendeLink = (id) => {
+    let link = document.querySelector('nav ul li a[href="#'+id+'"]');
+    return link;
+}
